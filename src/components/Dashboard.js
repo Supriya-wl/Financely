@@ -110,7 +110,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchTransactions();
-  }, []);
+  }, [user]);
 
   const onFinish = (values, type) => {
     const newTransaction = {
@@ -150,7 +150,8 @@ const Dashboard = () => {
     calculateBalance();
   }, [transactions]);
 
-  async function addTransaction(transaction, many) {
+  async function 
+  addTransaction(transaction, many) {
     try {
       const docRef = await addDoc(
         collection(db, `users/${user.uid}/transactions`),
@@ -203,7 +204,7 @@ const Dashboard = () => {
     boxShadow: "0px 0px 30px 8px rgba(227, 227, 227, 0.75)",
     margin: "2rem",
     borderRadius: "0.5rem",
-    minWidth: "400px",
+    minWidth: "200px",
     flex: 1,
   };
 

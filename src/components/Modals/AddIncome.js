@@ -76,8 +76,8 @@ function AddIncomeModal({
             <Select.Option value="salary">Salary</Select.Option>
             <Select.Option value="freelance">Freelance</Select.Option>
             <Select.Option value="investment">Investment</Select.Option>
-            <Select.Option value="investment">Bonus/Allowances</Select.Option>
-            <Select.Option value="investment">TaxReturns</Select.Option>
+            <Select.Option value="bonus">Bonus/Allowances</Select.Option>
+            <Select.Option value="taxReturns">TaxReturns</Select.Option>
           
             {}
           </Select>

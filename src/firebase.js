@@ -1,19 +1,21 @@
 import { initializeApp } from "firebase/app";
-
+import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyATGfDWEySyw6yw5jLnajlGoHv2m2nckNA",
-  authDomain: "podcast-react-app-4da1e.firebaseapp.com",
-  projectId: "podcast-react-app-4da1e",
-  storageBucket: "podcast-react-app-4da1e.appspot.com",
-  messagingSenderId: "236964049974",
-  appId: "1:236964049974:web:ac0ddd840294796c1ed497",
-  measurementId: "G-JJFNBP7BH0"
+  apiKey: "AIzaSyCjNDGDvYEEaK7kNIAIZEPtMHHcuA3ZrCw",
+  authDomain: "financely-reactapp.firebaseapp.com",
+  projectId: "financely-reactapp",
+  storageBucket: "financely-reactapp.appspot.com",
+  messagingSenderId: "781771093530",
+  appId: "1:781771093530:web:7998fa441c9221185c03a3",
+  measurementId: "G-9W1GPLCYFB"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();

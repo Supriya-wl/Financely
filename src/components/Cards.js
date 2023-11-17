@@ -15,7 +15,7 @@ function Cards({
       style={{
         display: "flex",
         flexWrap: "wrap",
-        gap: "16px",
+        gap: "10px",
         justifyContent: "space-between",
       }}
     >
